@@ -1,0 +1,21 @@
+@import "../../sass/mixins";
+
+.slider__btn {
+  border: 0;
+  background-color: #000;
+  transition: all 0.4s ease;
+  padding: 1.96rem 2.3rem;
+
+  @include breakpoint-up(x-large) {
+    padding: 2.8rem 3rem;
+  }
+
+  &:hover {
+    background-color: hsl(0, 0%, 63%);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,67 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.hero__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 7.2rem 0;
+  padding: 0 5%;
+
+  @include breakpoint-down(large) {
+    transition: all 1s ease 0.2s;
+  }
+
+  @include breakpoint-up(x-large) {
+    max-width: 40rem;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+  }
+
+  &.right {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  &.left {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  &.center {
+    opacity: 1;
+  }
+}
+
+// hero title
+.hero__title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -1.17px;
+  margin-bottom: 1.4rem;
+
+  @include breakpoint-up(x-large) {
+    font-size: 4rem;
+    letter-spacing: -1.67px;
+    margin-bottom: 2.2rem;
+  }
+}
+
+// hero description
+.hero__description {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.66;
+  letter-spacing: -0.25px;
+  color: $darkGray;
+  text-align: justify;
+  margin-bottom: 5.2rem;
+
+  @include breakpoint-up(x-large) {
+    margin-bottom: 3.2rem;
+  }
+}

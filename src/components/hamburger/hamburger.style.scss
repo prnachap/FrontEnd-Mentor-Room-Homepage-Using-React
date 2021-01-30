@@ -1,0 +1,7 @@
+@import "../../sass/mixins";
+.hamburger {
+  z-index: 400;
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}

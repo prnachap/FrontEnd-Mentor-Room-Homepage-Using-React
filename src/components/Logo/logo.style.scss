@@ -1,0 +1,27 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+// logo
+.logo__container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6.2rem;
+  height: 1.4rem;
+
+  @include breakpoint-up(large) {
+    position: relative;
+    left: 0;
+    transform: translate(0);
+  }
+
+  .logo {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    display: block;
+  }
+  @include breakpoint-up(large) {
+    margin-right: 5.6rem;
+  }
+}

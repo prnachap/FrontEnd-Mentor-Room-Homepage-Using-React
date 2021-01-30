@@ -1,0 +1,26 @@
+.btn {
+  border: none;
+  color: hsl(0, 0%, 0%);
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  & svg path {
+    transition: all 0.3s ease;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &:hover,
+  &:hover svg path {
+    color: hsl(0, 0%, 63%);
+    fill: hsl(0, 0%, 63%);
+  }
+}
